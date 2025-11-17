@@ -79,10 +79,6 @@ export function JobCard({
                         <span className="text-sm">View Details</span>
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
                     </div>
-                    <div className="flex items-center gap-1.5 text-yellow-500/70 group-hover:text-yellow-400 transition-colors">
-                        <Sparkles className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                        <span className="text-xs font-medium">Featured</span>
-                    </div>
                 </div>
             </div>
             <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-600/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

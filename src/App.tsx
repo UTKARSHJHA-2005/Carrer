@@ -3,7 +3,7 @@ import { JobCard } from "./JobCard";
 import { JobDetailPage } from "./JobDetail";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { ArrowRight, Search, Sparkles, Target, Shield, Users, TrendingUp, Award, Clock, Globe } from "lucide-react";
+import { ArrowRight, Search, Shield, TrendingUp, Clock, Globe } from "lucide-react";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
@@ -219,31 +219,6 @@ export default function App() {
           </div>
         </div>
       </section>
-      <section className="w-full max-w-5xl mx-auto px-6 py-30">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div data-aos="fade-right" className="backdrop-blur-md bg-slate-900/50 border border-slate-800/50 rounded-2xl p-6 text-center hover:border-blue-500/30 transition-all">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-600/20 to-blue-600/10 rounded-xl flex items-center justify-center mx-auto mb-3">
-              <Users className="w-6 h-6 text-blue-400" />
-            </div>
-            <div className="text-3xl font-bold text-white mb-1">500+</div>
-            <div className="text-slate-400 text-sm">Team Members</div>
-          </div>
-          <div data-aos="zoom-out" className="backdrop-blur-md bg-slate-900/50 border border-slate-800/50 rounded-2xl p-6 text-center hover:border-purple-500/30 transition-all">
-            <div className="w-12 h-12 bg-gradient-to-br from-purple-600/20 to-purple-600/10 rounded-xl flex items-center justify-center mx-auto mb-3">
-              <TrendingUp className="w-6 h-6 text-purple-400" />
-            </div>
-            <div className="text-3xl font-bold text-white mb-1">15+</div>
-            <div className="text-slate-400 text-sm">Countries</div>
-          </div>
-          <div data-aos="fade-left" className="backdrop-blur-md bg-slate-900/50 border border-slate-800/50 rounded-2xl p-6 text-center hover:border-green-500/30 transition-all">
-            <div className="w-12 h-12 bg-gradient-to-br from-green-600/20 to-green-600/10 rounded-xl flex items-center justify-center mx-auto mb-3">
-              <Award className="w-6 h-6 text-green-400" />
-            </div>
-            <div className="text-3xl font-bold text-white mb-1">10 yrs</div>
-            <div className="text-slate-400 text-sm">Excellence</div>
-          </div>
-        </div>
-      </section>
       <section className="py-20 px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
@@ -310,10 +285,6 @@ export default function App() {
       </section>
       <section id="open-positions" className="py-20 px-6 max-w-7xl mx-auto relative z-10">
         <div data-aos="flip-left" className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/50 border border-slate-700/50 mb-4 backdrop-blur-sm">
-            <Target className="w-4 h-4 text-blue-400" />
-            <span className="text-slate-300 text-sm font-medium">Available Positions</span>
-          </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
             Open Positions
           </h2>
