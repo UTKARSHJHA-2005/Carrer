@@ -193,13 +193,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-black">
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 right-20 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 left-20 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-indigo-500/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
-      </div>
       <section data-aos="fade-up" className="relative min-h-[600px] flex flex-col justify-center items-center text-center px-6 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-600/10 via-transparent to-transparent"></div>
         <div className="relative z-10 max-w-4xl mx-auto">
           <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent leading-tight">
             Join Our Team
@@ -275,11 +269,7 @@ export default function App() {
             </div>
           </div>
           <div data-aos="flip-right">
-            <img
-              src="https://images.unsplash.com/photo-1590650046871-92c887180603"
-              alt="Working"
-              className="rounded-3xl w-full object-cover"
-            />
+            <img src="https://images.unsplash.com/photo-1590650046871-92c887180603" alt="Working" className="rounded-3xl w-full object-cover" />
           </div>
         </div>
       </section>

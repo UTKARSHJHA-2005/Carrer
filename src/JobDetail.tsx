@@ -38,13 +38,7 @@ interface JobDetailPageProps {
 
 export function JobDetailPage({ job, onBack }: JobDetailPageProps) {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
-      {/* Animated Background Elements */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 right-20 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 left-20 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-      </div>
-
+    <div className="min-h-screen bg-black">
       {/* Header */}
       <div className="relative backdrop-blur-xl bg-slate-900/50 border-b border-slate-800/50 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4">
@@ -125,13 +119,9 @@ export function JobDetailPage({ job, onBack }: JobDetailPageProps) {
           </div>
         </div>
       </section>
-
-      {/* Main Content */}
       <section className="px-6 pb-20 relative">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-3 gap-8">
-          {/* Left Column */}
           <div className="lg:col-span-2 space-y-6">
-            {/* About the Role */}
             <div className="group backdrop-blur-sm bg-slate-900/50 border border-slate-800/50 rounded-2xl p-8 hover:border-slate-700/50 transition-all">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-600/20 to-blue-600/10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -141,8 +131,6 @@ export function JobDetailPage({ job, onBack }: JobDetailPageProps) {
               </div>
               <p className="text-slate-300 leading-relaxed text-lg">{job.aboutRole}</p>
             </div>
-
-            {/* Responsibilities */}
             <div className="group backdrop-blur-sm bg-slate-900/50 border border-slate-800/50 rounded-2xl p-8 hover:border-slate-700/50 transition-all">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-600/20 to-purple-600/10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -161,8 +149,6 @@ export function JobDetailPage({ job, onBack }: JobDetailPageProps) {
                 ))}
               </div>
             </div>
-
-            {/* Requirements */}
             <div className="group backdrop-blur-sm bg-slate-900/50 border border-slate-800/50 rounded-2xl p-8 hover:border-slate-700/50 transition-all">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-green-600/20 to-green-600/10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -178,7 +164,6 @@ export function JobDetailPage({ job, onBack }: JobDetailPageProps) {
                   </div>
                 ))}
               </div>
-
               {job.niceToHave && job.niceToHave.length > 0 && (
                 <>
                   <div className="my-8 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
@@ -200,10 +185,7 @@ export function JobDetailPage({ job, onBack }: JobDetailPageProps) {
               )}
             </div>
           </div>
-
-          {/* Right Column */}
           <div className="space-y-6">
-            {/* Apply Card */}
             <div className="backdrop-blur-sm bg-gradient-to-br from-slate-900/80 to-slate-900/50 border border-slate-800/50 rounded-2xl p-6 sticky top-24 shadow-2xl">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-500 rounded-xl flex items-center justify-center mb-4 shadow-lg shadow-blue-600/30">
                 <TrendingUp className="w-6 h-6 text-white" />
@@ -220,8 +202,6 @@ export function JobDetailPage({ job, onBack }: JobDetailPageProps) {
                 Share this Job
               </button>
             </div>
-
-            {/* Benefits */}
             <div className="backdrop-blur-sm bg-slate-900/50 border border-slate-800/50 rounded-2xl p-6 hover:border-slate-700/50 transition-all">
               <h3 className="mb-5 text-xl font-bold text-white flex items-center gap-2">
                 <Sparkles className="w-5 h-5 text-yellow-400" />
