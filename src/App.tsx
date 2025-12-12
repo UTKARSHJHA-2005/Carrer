@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Sparkles, Target, Zap, Brain, Trophy, Award, Medal, Star, Users, Flame, Rocket, Crown } from "lucide-react";
+import Header from "@/components/layout/Header";
+import { Sparkles, Target, Zap, Brain, Twitter, Linkedin, Instagram, MessageCircle, Trophy, Award, Medal, Star, Users, Flame, Rocket, Crown } from "lucide-react";
 
 const teamMembers = [
   {
@@ -35,9 +36,18 @@ const beliefs = [
   { icon: Brain, title: "Intentional Tech", desc: "Technology that amplifies human potential", color: "from-orange-500 via-amber-500 to-yellow-500" },
 ];
 
+const socialLinks = [
+  { icon: <Twitter className="w-6 h-6" />, url: "https://x.com/tranquiex", color: "#1DA1F2", name: "Twitter" },
+  { icon: <Linkedin className="w-6 h-6" />, url: "https://www.linkedin.com/company/tranquiex/", color: "#0077B5", name: "LinkedIn" },
+  { icon: <Instagram className="w-6 h-6" />, url: "https://www.instagram.com/tranquiex?igsh=aHR4bmZ2dmNpaTh1", color: "#E4405F", name: "Instagram" },
+  { icon: <MessageCircle className="w-6 h-6" />, url: "https://chat.whatsapp.com/I4Z4VUrQaFC792njCV8uDr", color: "#25D366", name: "WhatsApp" }
+];
+
+
 export default function CompanyPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-black to-gray-900 text-white overflow-hidden">
+      <Header />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-6 pt-24">
         <div className="max-w-6xl mx-auto text-center relative z-10">
@@ -357,6 +367,33 @@ export default function CompanyPage() {
           </div>
         </div>
       </section>
+      <div className="max-w-4xl mx-auto text-center mb-20">
+        <motion.h2
+          className="text-3xl md:text-5xl font-black mb-7 text-center"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          <span className="bg-gradient-to-r from-green-400 via-blue-400 to-red-400 bg-clip-text text-transparent">
+            Connect With Us
+          </span>
+        </motion.h2>        <div className="flex justify-center gap-6 flex-wrap">
+          {socialLinks.map((social, index) => (
+            <a key={index} href={social.url} target="_blank" rel="noopener noreferrer" className="group relative">
+              <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 blur-xl transition-all duration-300"
+                style={{ backgroundColor: social.color + '40' }}></div>
+              <div className="relative bg-gray-800/50 backdrop-blur-xl p-6 rounded-2xl border border-gray-700/50 hover:border-gray-600 transition-all duration-300 transform group-hover:scale-110 group-hover:-translate-y-2">
+                <div style={{ color: social.color }} className="transform transition-transform duration-300 group-hover:rotate-12">
+                  {social.icon}
+                </div>
+                <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                  {social.name}
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
