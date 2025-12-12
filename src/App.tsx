@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Header from "@/components/layout/Header";
 import { Sparkles, Target, Zap, Brain, Trophy, Award, Medal, Star, Users, Flame, Rocket, Crown } from "lucide-react";
 
 const teamMembers = [
@@ -39,7 +38,6 @@ const beliefs = [
 export default function CompanyPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-black to-gray-900 text-white overflow-hidden">
-      <Header />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-6 pt-24">
         <div className="max-w-6xl mx-auto text-center relative z-10">
