@@ -1,0 +1,63 @@
+{
+  "name": "Tranquiex - AI-Powered Focus & Productivity Platform",
+  "short_name": "Tranquiex",
+  "description": "Transform your focus with AI-powered attention tracking, distraction blocking, and wearable technology. Boost concentration and achieve deep work states.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["productivity", "health", "education", "lifestyle"],
+  "icons": [
+    {
+      "src": "/tranquiex-new-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/tranquiex-new-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-desktop.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "platform": "wide",
+      "label": "Tranquiex Desktop Experience"
+    },
+    {
+      "src": "/screenshot-mobile.jpg",
+      "sizes": "750x1334",
+      "type": "image/jpeg",
+      "platform": "narrow",
+      "label": "Tranquiex Mobile Experience"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Start Focus Session",
+      "short_name": "Focus",
+      "description": "Start a new focus session with FocusX",
+      "url": "/focusx",
+      "icons": [
+        {
+          "src": "/focus-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://tranquiex.com/focusx"
+    }
+  ]
+}
